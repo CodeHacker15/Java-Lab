@@ -43,40 +43,41 @@ class demo
 {
 	public static void main(String args[])
 	{
+		int ch = 0;
 		Scanner s1 = new Scanner(System.in);
 		shape sc = new circle();
 		shape sr = new rectangle();
 		shape ss = new square();
-		System.out.println("\n=========Circle!=========");
-		sc.area();
-		System.out.println("=========================");
-		System.out.println("\n=========Rectangle!=========");
-		sr.area();
-		System.out.println("============================");
-		System.out.println("\n=========Square!=========");
-		ss.area();
-		System.out.println("=========================");
+		while(ch != 4)
+		{
+			System.out.println("==========MENU==========");
+			System.out.println("1. Circle");
+			System.out.println("2. Rectangle");
+			System.out.println("3. Square");
+			System.out.println("4. Exit");
+			System.out.print("Enter your choice = ");
+			ch = s1.nextInt();
+			switch(ch)
+			{
+				case 1:
+					sc.area();
+					System.out.println("========================\n");
+					break;
+				case 2:
+					sr.area();
+					System.out.println("========================\n");
+					break;
+				case 3:
+					ss.area();
+					System.out.println("========================\n");
+					break;
+				case 4:
+					break;
+				default:
+					System.out.println("Wrong Input! Try Again!");
+					System.out.println("========================\n");
+					break;
+			}
+		}
 	}
 }
-/*
-System.out.println("1. Circle");
-System.out.println("2. Rectangle");
-System.out.println("3. Square");
-System.out.print("Enter your choice = ");
-int ch = s1.nextInt();
-switch(ch)
-{
-	case 1:
-		sc.area();
-		break;
-	case 2:
-		sr.area();
-		break;
-	case 3:
-		//ss.area();
-		break;
-	default:
-		System.out.println("Wrong Input!");
-		break;
-	}
-*/
