@@ -3,7 +3,7 @@ class q4
 {
 	public static void main(String args[])
 	{
-		int n,ans,c,d,swap;
+		int n,ans,c,d,swap,i,tmp=1;
 		Scanner s = new Scanner(System.in);
 		System.out.print("Enter value of n = ");
 		n = s.nextInt();
@@ -14,7 +14,6 @@ class q4
 			System.out.print("Array["+c+"] = ");
 			a[c] = s.nextInt();
 		} 
-        int i,tmp=1;
         ans=1;
         for(c = 0;c < (n-1);c++)
 		{
@@ -36,6 +35,6 @@ class q4
                 tmp = 1;
             ans = Math.max(ans,tmp);
         }
-    System.out.println("Length of longest consecutive element sequence: "+ans);
+		System.out.println("Length of longest consecutive element sequence: "+ans);
 	}
 }

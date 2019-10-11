@@ -10,7 +10,7 @@ class q3
 		a = new int[n];
 		for(i = 0;i < n;i++)
 		{
-			System.out.print("Enter a number A["+i+"] = ");
+			System.out.print("A["+i+"] = ");
 			a[i] = s.nextInt();
 		}
 		len = 0;

@@ -5,7 +5,7 @@ class q11
 	{  
 		int n,i,key,first = 0;
 		Scanner s = new Scanner(System.in);
-		System.out.print("Input number of integers to sort = ");
+		System.out.print("Enter value of n = ");
 		n = s.nextInt();
 		int last = n;
 		int arr[] = new int[n];

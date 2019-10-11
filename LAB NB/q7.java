@@ -9,9 +9,10 @@ class q7
 		Scanner s = new Scanner(System.in);
 		System.out.print("Enter the value of n = ");
 		n = s.nextInt();
-		System.out.println("Prime numbers upto "+n+" are :");
+		System.out.print("Prime numbers upto "+n+" are : ");
 		if (n >= 1)
-			System.out.println(2);
+			System.out.print(2);
+		System.out.print(" ");
 		while(n >= num)
 		{
 			for (int j = 2;j <= Math.sqrt(num);j++)
@@ -23,7 +24,7 @@ class q7
 				}
 			}
 			if(status != 0)
-				System.out.println(num);
+				System.out.print(num+" ");
 			status = 1;
 			num++;
 		}         
