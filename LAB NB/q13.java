@@ -29,13 +29,13 @@ class q13
 		Shapes s = new Shapes();
         System.out.println("==========SQUARE==========");
         System.out.print("Enter the side of square = ");
-        a=sc.nextDouble();
+        a = sc.nextDouble();
         s.calcArea(a);
         s.display();
 		System.out.println("==========================\n");
         System.out.println("=========RECTANGLE=========");
         System.out.print("Enter the length of the rectangle = ");
-        a=sc.nextDouble();
+        a = sc.nextDouble();
 		System.out.print("Enter the breadth of the rectangle = ");
         b=sc.nextDouble();
         s.calcArea(a,b);

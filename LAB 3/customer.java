@@ -2,11 +2,8 @@ import java.util.Scanner;
 import java.util.Random;
 class customer
 {
-	private int C_Id;
-	private String C_Name;
-	private String B_Name;
-	private int IFSC;
-	private int C_Bal;
+	private int C_Id,IFSC,C_Bal;
+	private String C_Name,B_Name;
 	public customer()
 	{
 		Random rand = new Random();
@@ -22,13 +19,9 @@ class customer
 	public int check_id(int cid)
 	{
 		if(C_Id == cid)
-		{
 			return 1;
-		}
 		else
-		{
 			return 0;
-		}
 	}
 	public void show()
 	{
@@ -61,9 +54,7 @@ class demo
 		int cid_check = s1.nextInt();
 		int val = c1.check_id(cid_check);
 		if(val != 1)
-		{
 			System.out.println("Invalid Id!");
-		}
 		else
 		{
 			System.out.print("Correct Id! \n");

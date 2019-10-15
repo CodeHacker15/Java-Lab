@@ -9,7 +9,7 @@ class q9
 		Scanner s = new Scanner(System.in);
 		System.out.print("Enter Employee No = ");
 		int empno = s.nextInt();
-		System.out.print("Enter Salary = ");
+		System.out.print("Enter Name = ");
 		String empname = s.next();
 		System.out.print("Enter Basic = ");
 		basic = s.nextDouble();
