@@ -12,7 +12,7 @@ public class bill
 		int q;
 		Scanner s = new Scanner(System.in);
 		Food f = new Food();
-		int ch;
+		int ch = 0;
 		System.out.println("==========Food==========");
 		System.out.println("1. Chips");
 		System.out.println("2. Choclates");
@@ -21,19 +21,23 @@ public class bill
 		System.out.println("5. Milk");
 		System.out.println("6. Bread");
 		System.out.println("7. Exit");
-		System.out.print("Enter your choice = ");
-		ch = s.nextInt();
-		switch(ch)
+		while(ch != 7)
 		{
-			case 1:
-				sbill[count] = f.get_item(ch-1);
-				p = f.get_price(ch-1);
-				System.out.print("Quantity = ");
-				q = s.nextInt();
-				qbill[count] = q;
-				tbill[count] = p*q;
-				System.out.println(sbill[count]+" "+qbill[count]+" "+tbill[count]);
-				count = count + 1;
+			System.out.print("Enter your choice = ");
+			ch = s.nextInt();
+			switch(ch)
+			{
+				case 1:
+					sbill[count] = f.get_item(ch-1);
+					p = f.get_price(ch-1);
+					System.out.print("Quantity = ");
+					q = s.nextInt();
+					qbill[count] = q;
+						tbill[count] = p*q;
+					System.out.println(sbill[count]+" "+qbill[count]+" "+tbill[count]);
+					count = count + 1;
+					break;
+			}
 		}
 	}
 }
