@@ -1,6 +1,8 @@
 import food.*;
+import toiletries.*;
+import bm.*;
 import java.util.Scanner;
-public class bill
+public class bill extends bm
 {
 	public static void main(String args[])
 	{
@@ -24,7 +26,7 @@ public class bill
 			{
 				case 1:
 					ch = 0;
-					Food f = new Food();
+					food f = new food();
 					System.out.println("==========Food==========");
 					System.out.println("1. Chips");
 					System.out.println("2. Choclates");
@@ -68,7 +70,7 @@ public class bill
 					break;
 				case 4:
 					ch = 0;
-					Toiletries t = new Toiletries();
+					toiletries t = new toiletries();
 					System.out.println("==========Toiletries==========");
 					System.out.println("1. Soap");
 					System.out.println("2. Shampoo");
@@ -101,6 +103,9 @@ public class bill
 							System.out.println("==============================");
 						}
 					}
+					break;
+				case 5:
+					//thankyou
 					break;
 				default:
 					System.out.println("Wrong choice entered!");

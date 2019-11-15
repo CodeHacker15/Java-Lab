@@ -1,6 +1,6 @@
 package food;
 import supermart.supermart;
-public class Food implements supermart
+public class food implements supermart
 {
 	String[] Food = new String[] {"Chips","Choclates","Biscuits","Cake","Milk","Bread"};
 	int[] Price = new int[] {20,40,30,250,25,44};
