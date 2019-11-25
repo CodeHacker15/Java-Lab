@@ -6,6 +6,10 @@ abstract class shape
 	public double area;
 	public double side1,side2;
 	public abstract void area();
+	void display()
+	{
+		System.out.println("Im am abstract class ka method");
+	}
 }
 class circle extends shape
 {
