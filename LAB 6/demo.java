@@ -49,9 +49,7 @@ class demo
 	{
 		int ch = 0;
 		Scanner s1 = new Scanner(System.in);
-		shape sc = new circle();
-		shape sr = new rectangle();
-		shape ss = new square();
+		shape s;
 		while(ch != 4)
 		{
 			System.out.println("==========MENU==========");
@@ -64,15 +62,18 @@ class demo
 			switch(ch)
 			{
 				case 1:
-					sc.area();
+					s = new circle();
+					s.area();
 					System.out.println("========================\n");
 					break;
 				case 2:
-					sr.area();
+					s = new rectangle();
+					s.area();
 					System.out.println("========================\n");
 					break;
 				case 3:
-					ss.area();
+					s = new sqaure();
+					s.area();
 					System.out.println("========================\n");
 					break;
 				case 4:
